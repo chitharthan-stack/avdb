@@ -1,0 +1,99 @@
+.container{
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.selector{
+    width: 350px;
+}
+
+#selectfield{
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 30px ;
+    box-sizing: border-box;
+    background-color:#eff6fc;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    cursor: pointer;
+}
+
+#selectfield img{
+    width: 12px;
+    transition: transform 0.5s;
+}
+
+#list{
+    width: 100%;
+    background: #eff6fc;
+    border-radius: 6px;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.options{
+    width: 100%;
+    padding: 15px;
+    list-style: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    
+}
+
+.options:hover{
+    background:lightgray;
+
+}
+
+.hide{
+    visibility: hidden;
+}
+
+.rotate{
+    transform:rotate(180deg);
+}
+
+#line{
+    text-decoration: none;
+}
+ 
+
+/*----Target protein-----*/
+form{
+    background: #fff;
+    width: 600px;
+    height: 55px;
+    display: flex;
+}
+
+form input{
+    flex:1;
+    border:none;
+    outline: none;
+}
+
+form button{
+    background: tomato;
+    padding: 10px;
+    border:none;
+    outline: none;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+form .fa-search{
+    align-self: center;
+    padding: 10px 20px;
+    color:black;
+}
+
+#sb:hover{
+    background: orangered;
+}
+
+

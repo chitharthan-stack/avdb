@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+    <meta charset="utf-8">
+    <meta name="vieport" content="width=device-width,intial-scale=1">
+    <title>ANTIVIRAL DRUG DB</title>
+    <link rel="stylesheet" href="New folder/style.css">
+    <link rel="stylesheet" href="New folder/s1.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel = "icon"  href ="image/Logo.png"  type = "image/x-icon">
+
+      
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+    </script>
+
+    <body>
+        <section class="abt-header">
+            <nav>
+                <a href="index.html"><img src="New folder/image/Logo.png" alt="CLRI_Logo"></a>
+                <div class="nav-links" id="navlinks">
+                    
+                     <ul>
+                        <li><a href="index.html">HOME</a></li>  
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="search.html">SEARCH</a></li> 
+                     </ul>
+                </div>
+                
+            </nav>
+            <h1>Search</h1>
+        </section>
+
+        <!---search button----->
+        <section>
+            <div class="container">
+                 
+                <div class="selector">
+                    <div id="selectfield">
+                        <p id="selectext">Search By </p>
+                        <img src="New folder/image/arrow-down.png" alt="arrow-down-sign-to-navigate" id="arrowicon">
+                    </div>
+                    <ul id="list" class="hide">
+                        <a href="target protein.html" id="line"><li class="options" ><p>TARGET PROTEIN</p></li></a>
+                        <a href="smiles.html"id="line"><li class="options"><p>SMILES</p></li></a>
+                        <a href="docking score.html"id="line"><li class="options"><p>DOCKING SCORE</p></li></a>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <script>
+                var selectfield = document.getElementById("selectfield");
+                var selectext = document.getElementById("selectext");
+                var options = document.getElementsByClassName("options");
+                var list=document.getElementById("list");
+                var arrowicon =document.getElementById("arrowicon");
+
+                selectfield.onclick=function()
+                {
+                    list.classList.toggle("hide");
+                    arrowicon.classList.toggle("rotate");
+                }
+
+                for(option of options)
+                {
+                    option.onclick=function()
+                    {
+                        selectext.innerHTML=this.textContent;
+                        list.classList.toggle("hide");
+                        arrowicon.classList.toggle("rotate");
+                    }
+                }
+
+            </script>
+        </section>
+        
+        <!----Footer------>
+
+        <section class="footer">
+            <h4>DATABASE NAME</h4>
+            <p>Developed @ CSIR-CLRI, Dept.of.High computing</p>
+        </section>
+    </body>
+</html>
+
+
+</body>
+</html>
